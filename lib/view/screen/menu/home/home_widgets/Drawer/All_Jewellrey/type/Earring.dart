@@ -1,7 +1,6 @@
 // ignore_for_file: non_constant_identifier_names, file_names
 
 import 'package:caratglow/controller/ScreenController/MenuController/Drawer_Controller.dart';
-import 'package:caratglow/view/screen/menu/home/home_widgets/Drawer/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../../../../utils/app_String.dart';

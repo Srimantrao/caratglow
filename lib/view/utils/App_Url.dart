@@ -1,8 +1,11 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, constant_identifier_names
 
+class Caretglow {
+  static const base_url = "https://weingenious.in/caratglow/api/";
+}
+
+//Get ApI Link
 class HomePageData {
-  static const homepageData =
-      "https://weingenious.in/caratglow/api/Home/HomePageData";
-  static const category =
-      "https://weingenious.in/caratglow/api/Home/CategoryMenu";
+  static const homepageData = "${Caretglow.base_url}Home/HomePageData";
+  static const category = "${Caretglow.base_url}Home/CategoryMenu";
 }

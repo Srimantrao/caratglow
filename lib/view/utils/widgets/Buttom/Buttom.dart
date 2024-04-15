@@ -1,4 +1,4 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, unrelated_type_equality_checks
 
 import 'package:caratglow/view/utils/app_color.dart';
 import 'package:flutter/cupertino.dart';
@@ -7,9 +7,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
 
-import '../../../../controller/ScreenController/MenuController/Buttom_Controller.dart';
+import '../../../../controller/ScreenController/ButtomController/Buttom_Controller.dart';
 import '../../../screen/menu/home/home.dart';
 import '../../app_constans.dart';
+import '../CircleAvatar/buttomSelection.dart';
 
 class Buttom extends StatefulWidget {
   const Buttom({super.key});
@@ -33,16 +34,6 @@ class _ButtomState extends State<Buttom> {
     super.dispose();
   }
 
-  int Selectindex = 0;
-
-  List<Widget> item = [
-    const home(),
-  ];
-
-  Widget Selectitem(int index) {
-    return item[index];
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,19 +49,14 @@ class _ButtomState extends State<Buttom> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
+                //home
                 InkWell(
                   onTap: () {
-                    Selectindex = 0;
-                    setState(() {});
+                    buttom_con.indexselect_fuction_one();
                   },
-                  child: CircleAvatar(
-                    backgroundColor: (Selectindex == 0)
-                        ? AppColor.button
-                        : AppColor.background,
-                    child: Icon(
-                      Icons.home_outlined,
-                      color: (Selectindex == 0) ? AppColor.background : null,
-                    ),
+                  child: Circal(
+                    circle_color: buttom_con.Selectindex == 0,
+                    icon_color: buttom_con.Selectindex == 0,
                   ),
                 ),
                 const Icon(Icons.search),
@@ -81,7 +67,9 @@ class _ButtomState extends State<Buttom> {
           ),
         ),
       ),
-      body: Selectitem(Selectindex),
+      body: Obx(
+        () => buttom_con.Selectitem(buttom_con.Selectindex.value),
+      ),
     );
   }
 }

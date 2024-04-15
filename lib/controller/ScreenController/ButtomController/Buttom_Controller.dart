@@ -4,7 +4,25 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
 
+import '../../../view/screen/menu/home/home.dart';
+
 class Buttom_Controller extends GetxController {
+  //Item Selection
+  var Selectindex = 0.obs;
+
+  List<Widget> item = [
+    const home(),
+  ];
+
+  Widget Selectitem(int index) {
+    return item[index];
+  }
+
+  void indexselect_fuction_one() {
+    Selectindex.value = 0;
+  }
+
+  //BottamNavigation Behavir
   var isScroll = false.obs;
   ScrollController mainScroll = ScrollController();
 

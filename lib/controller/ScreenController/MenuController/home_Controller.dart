@@ -47,3 +47,27 @@ class Selectimage_homeController extends GetxController {
     Selectimage.value = 4;
   }
 }
+
+class feature_product_Controller extends GetxController {
+  var Pendals = true.obs;
+  var Rinds = false.obs;
+  var Earrings = false.obs;
+
+  void Pendant_fuction() {
+    Pendals.value = true;
+    Rinds.value = false;
+    Earrings.value = false;
+  }
+
+  void Ring_fuction() {
+    Rinds.value = true;
+    Pendals.value = false;
+    Earrings.value = false;
+  }
+
+  void Earring_Fuction() {
+    Earrings.value = true;
+    Pendals.value = false;
+    Rinds.value = false;
+  }
+}

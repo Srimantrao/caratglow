@@ -1,8 +1,6 @@
 
-// ignore_for_file: prefer_typing_uninitialized_variables
+// ignore_for_file: prefer_typing_uninitialized_variables, non_constant_identifier_names
 
 //Scroll bar
-import 'package:flutter/cupertino.dart';
 
-// bool  isScroll = false;
-// ScrollController mainScroll = ScrollController();
+bool All_Jewwllery = false;

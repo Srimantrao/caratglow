@@ -1,5 +1,7 @@
 // ignore_for_file: camel_case_types, file_names, constant_identifier_names
 
+import 'package:flutter/gestures.dart';
+
 class Logo_text {
   static const logoname = "CaretGlow";
   static const Slogans = "Make a statement without saying a word";
@@ -51,4 +53,43 @@ class Menu_text {
   //
   static const Explore = "Explore Collection";
   static const shopnow = "ShopNow";
+}
+
+class Drawer_text {
+  static const All_Jewellery = "All Jewellery";
+  static const Ring = "Ring";
+  static const Earring = "Earring";
+  static const Pendant = "Pendant";
+  static const Tanmania = "Tanmania";
+  static const Bangle = "Bangle";
+  static const Nosepine = "Nosepine";
+  static const Shop_By_Occasion = "Shop By Occasion";
+  static const Shop_By_Price = "Shop By Price";
+  static const Shop_by_Weight = "Shop by Weight";
+  static const Shop_by_Color = "Shop by color";
+  static const Solitaire = "Solitaire";
+  static const Create_your_Own_Jewellery = "Create your Own Jewellery";
+  static const Shop_By_Category = "Shop By Category";
+  static const Collection = "Collection";
+  static const Shop_By_Collection = "Shop By Collection";
+  static const Design_Your_Own_Price = "Design Your Own Price";
+  static const Gifiting = "Gifiting";
+
+  //Ring
+
+  static const Engagement = "Engagement";
+  static const Bands = "Bands";
+  static const Eternity = "Eternity";
+  static const Cocktail = "Cocktail";
+  static const Casual = "Casual";
+  static const Men_Rings = "Men's Ring";
+
+  //Earring
+
+  static const Stud = "Stud";
+  static const Drag = "Drop";
+  static const Huggies = "Huggies";
+  static const Sui_Dhaga = "Sui Dhaga";
+  static const Earcuffs = "Earcuffs";
+  static const Hoops = "Hoops";
 }

@@ -1,9 +1,9 @@
 // ignore_for_file: file_names, camel_case_types, non_constant_identifier_names
 
+import 'package:caratglow/view/screen/collection/Signup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
-
 import '../../../view/screen/menu/home/home.dart';
 
 class Buttom_Controller extends GetxController {
@@ -12,6 +12,8 @@ class Buttom_Controller extends GetxController {
 
   List<Widget> item = [
     const home(),
+    const SizedBox(),
+    const Signup(),
   ];
 
   Widget Selectitem(int index) {
@@ -20,6 +22,14 @@ class Buttom_Controller extends GetxController {
 
   void indexselect_fuction_one() {
     Selectindex.value = 0;
+  }
+
+  void indexselect_fuction_two() {
+    Selectindex.value = 1;
+  }
+
+  void indexselect_fuction_Three() {
+    Selectindex.value = 2;
   }
 
   //BottamNavigation Behavir

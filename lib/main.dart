@@ -15,7 +15,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: const Logo(),
-      theme: ThemeData(fontFamily: GoogleFonts.poppins().fontFamily),
+      theme: ThemeData(
+        fontFamily: GoogleFonts.poppins().fontFamily,
+      ),
     );
   }
 }

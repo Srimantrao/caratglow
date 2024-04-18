@@ -1,7 +1,5 @@
 // ignore_for_file: camel_case_types, file_names, constant_identifier_names
 
-import 'package:flutter/gestures.dart';
-
 class Logo_text {
   static const logoname = "CaretGlow";
   static const Slogans = "Make a statement without saying a word";
@@ -13,6 +11,39 @@ class Welcome_text {
   static const Get_Started = "GET STARTED";
   static const Elevate =
       "Elevete your Look With Sustainable handcrafted diamond jewelry.Choose desing, and enjoy a lifetime guarantee Experience personalized elegance.";
+}
+
+//Collction
+//Sinup
+class Signup_text {
+  static const personalInformation = "Personal Information";
+  static const Lastname = "LAST NAME";
+  static const E_Lastname = "Enter Last Name";
+  static const E_Fisrname = "Enter Fisrt Name";
+  static const Fistname = "FRIST NAME";
+  static const Gender = "GENDER";
+  static const Male = "Male";
+  static const FeMale = "FeMale";
+  static const Contact_Details = "Contact Details";
+  static const code = "CODE";
+  static const Email_Address = "EMAIL ADDRESS";
+  static const E_Email_Address = "Enter Email Address";
+  static const Mobile = "MOBILE";
+  static const Address_Details = "Address Details";
+  static const Street = "STREET";
+  static const E_Street = "Enter Street";
+  static const CITY = "CITY";
+  static const E_CITY = "Enter City";
+  static const Pin_code = "PIN CODE";
+  static const E_Pin_code = "Enter PinCcode";
+  static const State = "STATE";
+  static const Country = "COUNTRY";
+  static const password = "PASSWORD";
+  static const E_password = "Enter password";
+  static const E_cnf_password = "Enter confirm Password";
+  static const cnf_password = "CONFIRM PASSWORD";
+  static const Already = "Already have an Account ? SIGN IN";
+  static const Sinup = "SIGN UP";
 }
 
 class Menu_text {

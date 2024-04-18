@@ -57,10 +57,33 @@ class _ButtomState extends State<Buttom> {
                   child: Circal(
                     circle_color: buttom_con.Selectindex == 0,
                     icon_color: buttom_con.Selectindex == 0,
+                    icon: const Icon(Icons.home_outlined),
                   ),
                 ),
-                const Icon(Icons.search),
-                const Icon(Icons.shopping_cart_outlined),
+
+                //cart
+                InkWell(
+                  onTap: () {
+                    buttom_con.indexselect_fuction_two();
+                  },
+                  child: Circal(
+                    circle_color: buttom_con.Selectindex == 1,
+                    icon_color: buttom_con.Selectindex == 1,
+                    icon: const Icon(Icons.search),
+                  ),
+                ),
+
+                //cart
+                InkWell(
+                  onTap: () {
+                    buttom_con.indexselect_fuction_Three();
+                  },
+                  child: Circal(
+                    circle_color: buttom_con.Selectindex == 2,
+                    icon_color: buttom_con.Selectindex == 2,
+                    icon: const Icon(Icons.shopping_cart_outlined),
+                  ),
+                ),
                 const Icon(CupertinoIcons.heart),
               ],
             ),
